@@ -13,10 +13,13 @@ import {
 } from '@/components/ui/card'
 
 interface DashboardContentProps {
-  user: {
-    name?: string | null
-    email: string
-  } | null | undefined
+  user:
+    | {
+        name?: string | null
+        email: string
+      }
+    | null
+    | undefined
 }
 
 export function DashboardContent({ user }: DashboardContentProps) {
@@ -24,7 +27,7 @@ export function DashboardContent({ user }: DashboardContentProps) {
 
   return (
     <div className="container py-8">
-      <div className="flex items-center justify-between mb-8">
+      <div className="mb-8 flex items-center justify-between">
         <h1 className="text-4xl font-bold">Dashboard</h1>
         <SignOutButton />
       </div>
@@ -113,7 +116,10 @@ export function DashboardContent({ user }: DashboardContentProps) {
               <Plus className="h-4 w-4" />
               <span>New Project</span>
             </Button>
-            <Button variant="outline" className="w-full justify-start space-x-2">
+            <Button
+              variant="outline"
+              className="w-full justify-start space-x-2"
+            >
               <Users className="h-4 w-4" />
               <span>Invite Team Member</span>
             </Button>
@@ -122,4 +128,4 @@ export function DashboardContent({ user }: DashboardContentProps) {
       </div>
     </div>
   )
-} 
+}

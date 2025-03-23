@@ -1,6 +1,8 @@
 'use client'
 
 import Link from 'next/link'
+
+import { AuthForm } from '@/components/auth/auth-form'
 import {
   Card,
   CardContent,
@@ -9,7 +11,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { AuthForm } from '@/components/auth/auth-form'
 
 export default function SignIn() {
   return (

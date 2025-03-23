@@ -12,4 +12,4 @@ export default async function DashboardPage() {
   const session = await getSession()
 
   return <DashboardContent user={session?.user} />
-} 
+}

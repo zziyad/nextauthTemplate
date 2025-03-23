@@ -20,12 +20,8 @@ export function SignOutButton({ className }: SignOutButtonProps) {
   }
 
   return (
-    <Button
-      variant="destructive"
-      onClick={handleSignOut}
-      className={className}
-    >
+    <Button variant="destructive" onClick={handleSignOut} className={className}>
       Sign Out
     </Button>
   )
-} 
+}

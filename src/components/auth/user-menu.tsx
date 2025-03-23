@@ -43,9 +43,9 @@ export function UserMenu({ user }: UserMenuProps) {
         <div className="flex items-center justify-start gap-2 p-2">
           <div className="flex flex-col space-y-1">
             {user.name && (
-              <p className="text-sm font-medium leading-none">{user.name}</p>
+              <p className="text-sm leading-none font-medium">{user.name}</p>
             )}
-            <p className="text-xs leading-none text-muted-foreground">
+            <p className="text-muted-foreground text-xs leading-none">
               {user.email}
             </p>
           </div>
@@ -64,7 +64,7 @@ export function UserMenu({ user }: UserMenuProps) {
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem
-          className="text-red-600 cursor-pointer"
+          className="cursor-pointer text-red-600"
           onSelect={handleSignOut}
         >
           Sign out

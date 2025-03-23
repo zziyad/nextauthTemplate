@@ -1,6 +1,7 @@
-import { hash, compare } from 'bcryptjs'
-import { prisma } from '@/lib/prisma'
+import { compare, hash } from 'bcryptjs'
+
 import { AuthError } from '@/lib/exceptions'
+import { prisma } from '@/lib/prisma'
 
 export interface RegisterData {
   email: string
@@ -94,4 +95,4 @@ export class AuthService {
       role: user.role,
     }
   }
-} 
+}

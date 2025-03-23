@@ -25,7 +25,7 @@ export function useAuthForm({ mode }: UseAuthFormProps) {
 
       if (mode === 'sign-up') {
         const name = formData.get('name') as string
-        
+
         // Call the register API endpoint
         const response = await fetch('/api/auth/register', {
           method: 'POST',
@@ -84,4 +84,4 @@ export function useAuthForm({ mode }: UseAuthFormProps) {
     isLoading,
     onSubmit,
   }
-} 
+}

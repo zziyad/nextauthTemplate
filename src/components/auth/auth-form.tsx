@@ -15,11 +15,11 @@ export function AuthForm({ mode }: AuthFormProps) {
   return (
     <form onSubmit={onSubmit} className="space-y-4">
       {error && (
-        <div className="p-3 text-sm text-red-500 bg-red-100 rounded-md">
+        <div className="rounded-md bg-red-100 p-3 text-sm text-red-500">
           {error}
         </div>
       )}
-      
+
       {mode === 'sign-up' && (
         <div className="space-y-2">
           <Label htmlFor="name">Name</Label>
@@ -56,18 +56,12 @@ export function AuthForm({ mode }: AuthFormProps) {
         />
       </div>
 
-      <Button
-        type="submit"
-        className="w-full"
-        disabled={isLoading}
-      >
-        {isLoading ? (
-          'Loading...'
-        ) : mode === 'sign-in' ? (
-          'Sign In'
-        ) : (
-          'Create Account'
-        )}
+      <Button type="submit" className="w-full" disabled={isLoading}>
+        {isLoading
+          ? 'Loading...'
+          : mode === 'sign-in'
+            ? 'Sign In'
+            : 'Create Account'}
       </Button>
     </form>
   )
