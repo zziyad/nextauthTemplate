@@ -1,0 +1,43 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Component Organization 🏗️
+Create atomic design structure (atoms, molecules, organisms)
+Move UI components to a proper shadcn/ui structure
+Implement layout patterns for consistent page structures
+Authentication Enhancement 🔐
+Add OAuth providers (Google, GitHub)
+Implement remember me functionality
+Add password reset flow
+Add email verification
+State Management 📊
+Implement React Query/TanStack Query for server state
+Add Zustand/Jotai for client state
+Create custom hooks for reusable logic
+API Layer 🔄
+Create API route handlers with Zod validation
+Implement proper error handling
+Add API response types
+Add rate limiting
+Performance Optimization ⚡
+Implement proper data fetching patterns
+Add loading states and suspense boundaries
+Optimize images and assets
+Add proper caching strategies
+Testing 🧪
+Add unit tests with Jest/Vitest
+Add E2E tests with Cypress/Playwright
+Add API integration tests
+Developer Experience 👩‍💻
+Add Husky for pre-commit hooks
+Implement proper TypeScript strict mode
+Add proper documentation
+Add Storybook for component development
+Security 🛡️
+Implement CSRF protection
+Add proper input sanitization
+Add security headers
+Implement proper session management
+Let me know which area you'd like to tackle first, and I'll help you implement the improvements! 🚀
